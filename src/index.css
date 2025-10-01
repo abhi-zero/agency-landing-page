@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/barlow-v13-latin/barlow-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../src/assets/fonts/barlow-v13-latin/barlow-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/fraunces-v38-latin/fraunces-v38-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/fraunces-v38-latin/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../src/assets/fonts/fraunces-v38-latin/fraunces-v38-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+
+
+@theme{
+    --color-cm-red-400: hsl(7, 99%, 70%);
+    --color-cm-yellow-500: hsl(51, 100%, 49%);
+    --color-cm-green-800: hsl(167, 40%, 24%);     /*(graphic design text)*/
+    --color-cm-green-500 : hsl(167, 34%, 41%)     /*(footer)*/
+    --color-cm-blue-800 : hsl(198, 62%, 26%)      /*(photography text)*/
+
+    /* Neutral */
+    --color-neutral-950:hsl(212, 27%, 19%);
+    --color-neutral-600: hsl(213, 9%, 39%);
+    --color-neutral-550:hsl(232, 10%, 55%);
+    --color-neutral-400:hsl(210, 4%, 67%);
+    --color-neutral-0:hsl(0, 100%, 100%);
+
+
+     /* Font family */
+
+     --font-Barlow : 'Barlow';
+     --font-Fraunces : 'Fraunces';
+
+     /* Images */
+     --hero-desktop: url('../images/desktop/image-header.jpg');
+     --hero-mobile: url('../images/mobile/image-header.jpg');
+}
+
+
+html,body{
+font-family: 'Barlow';
+background-color: rgb(46, 129, 207);
+}
+
+.triangle{
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 20px solid white;
+  border-top: 20px solid transparent;
+}
