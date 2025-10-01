@@ -95,7 +95,7 @@ export default function Navbar() {
                 <Button
                   text="CONTACT"
                   bg={"bg-yellow-500"}
-                  hoverBg={"bg-neutral-500"}
+                  hoverBg={"hover:bg-neutral-500"}
                 />
               </li>
             </ul>
