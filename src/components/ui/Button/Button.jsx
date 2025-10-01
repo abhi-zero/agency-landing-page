@@ -5,7 +5,7 @@ export default function Button({text,bg, hoverBg, hoverText, font, fontType, tex
    
         <button
         onClick={onClick && onClick}
-        className={`${bg ? bg: 'bg-neutral-0'}  hover:${hoverBg ? hoverBg : 'bg-neutral-0/30'} backdrop-blur-2xl px-5 py-2.5 rounded-full ${font ? font : 'font-Fraunces'} ${fontType ? fontType : 'font-medium'} hover:${hoverText ? hoverText : 'text-neutral-0'} transition-all duration-500 ease-in-out cursor-pointer ${textColor && textColor}`}
+        className={`${bg ? bg: 'bg-neutral-0'}  ${hoverBg ? hoverBg : 'hover:bg-neutral-0/30'} backdrop-blur-2xl px-5 py-2.5 rounded-full ${font ? font : 'font-Fraunces'} ${fontType ? fontType : 'font-medium'} ${hoverText ? hoverText : 'hover:text-neutral-0'} transition-all duration-500 ease-in-out cursor-pointer ${textColor ? textColor : 'text-black'}`}
         >{text}</button>
    
   )
