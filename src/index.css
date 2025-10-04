@@ -41,9 +41,18 @@
   src: url('../src/assets/fonts/fraunces-v38-latin/fraunces-v38-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 };
 
+:root{
+    --cm-red-400: hsl(7, 99%, 70%);
+    --cm-red-200: hsl(6, 100%, 70%);
+    --cm-yellow-500: hsl(51, 100%, 49%);
+    --cm-green-800: hsl(167, 40%, 24%);     /*(graphic design text)*/
+    --cm-green-500 : hsl(167, 34%, 41%)     /*(footer)*/
+    --cm-blue-800 : hsl(198, 62%, 26%)      /*(photography text)*/
+}
 
 @theme{
     --color-cm-red-400: hsl(7, 99%, 70%);
+    --color-cm-red-200: hsl(6, 100%, 70%);
     --color-cm-yellow-500: hsl(51, 100%, 49%);
     --color-cm-green-800: hsl(167, 40%, 24%);     /*(graphic design text)*/
     --color-cm-green-500 : hsl(167, 34%, 41%)     /*(footer)*/
@@ -71,6 +80,8 @@
 html,body{
 font-family: 'Barlow';
 background-color: rgb(46, 129, 207);
+/* color: hsl(6, 100%, 70%); */
+interpolate-size: allow-keywords;
 }
 
 .triangle{
