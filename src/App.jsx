@@ -1,7 +1,6 @@
 
-import Button from './components/ui/Button/Button'
 import Navbar from './components/Navbar/Navbar'
-import { AboutSection, HeroSetion } from './sections'
+import { AboutSection, HeroSetion, ServiceSection } from './sections'
 
 function App() {
   return (
@@ -9,6 +8,7 @@ function App() {
       <Navbar />
       <HeroSetion />
       <AboutSection />
+      <ServiceSection />
     </div>
   )
 }
