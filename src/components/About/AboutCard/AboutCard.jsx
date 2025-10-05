@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
 import CustomAnchorLink from "../../ui/CustomAnchorLink/CustomAnchorLink";
+import getColor from "../../../utitly/colors";
+
 export default function AboutCard({
   mobileImage,
   desktopImage,
@@ -11,14 +13,8 @@ export default function AboutCard({
   bg,
   linkText,
 }) {
-  const colors = {
-    yellow: "cm-yellow-500",
-    redMedium: "cm-red-400",
-    redLight: "cm-red-200",
-    greenDark: "cm-green-800",
-    greenLight: "cm-green-500",
-    blue: "cm-blue-800",
-  };
+
+  const color = getColor(bg)
 
   return (
     <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 bg-neutral-0 w-screen">
@@ -67,7 +63,7 @@ export default function AboutCard({
               once: true,
               amount: 0.2,
             }}
-            className="font-Barlow font-medium text-neutral-500 md:text-xl"
+            className="font-Barlow font-medium text-neutral-500 lg:text-xl"
           >
             {description}
           </motion.p>
@@ -89,15 +85,15 @@ export default function AboutCard({
               amount: 0.2,
             }}
           >
-            <CustomAnchorLink text={linkText} bgColor={colors[bg]} />
+            <CustomAnchorLink text={linkText} bgColor={color} />
           </motion.div>
         </div>
       </div>
       <div
        style={{
-        "--bg-img" : `var(--${colors[bg]})`
+        "--bg-img-color" : `var(--${color})`
       }}
-      className={`overflow-hidden bg-[var(--bg-img)]`}>
+      className={`overflow-hidden bg-[var(--bg-img-color)]`}>
         <picture>
           <source media="(max-width: 768px)" srcSet={mobileImage} />
           <source media="(min-width: 769px)" srcSet={desktopImage} />
@@ -128,7 +124,7 @@ export default function AboutCard({
             }}
             src={desktopImage}
             alt={alt}
-            className="w-full h-full object-center"
+            className="w-full h-full object-center object-cover"
           />
         </picture>
       </div>
