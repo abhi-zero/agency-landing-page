@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function CustomAnchorLink({ text, bgColor }) {
-  console.log(bgColor);
-
   return (
     <div>
       <a
