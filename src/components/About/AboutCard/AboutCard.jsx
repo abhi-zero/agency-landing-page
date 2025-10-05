@@ -23,6 +23,7 @@ export default function AboutCard({
   return (
     <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 bg-neutral-0 w-screen">
       <div
+     
         className={`${
           varient === 1
             ? "md:col-start-1 md:col-end-2 "
@@ -92,7 +93,11 @@ export default function AboutCard({
           </motion.div>
         </div>
       </div>
-      <div className={`overflow-hidden ${bg && `bg-${colors[bg]}`}`}>
+      <div
+       style={{
+        "--bg-img" : `var(--${colors[bg]})`
+      }}
+      className={`overflow-hidden bg-[var(--bg-img)]`}>
         <picture>
           <source media="(max-width: 768px)" srcSet={mobileImage} />
           <source media="(min-width: 769px)" srcSet={desktopImage} />
