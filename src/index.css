@@ -87,7 +87,7 @@
 html,
 body {
   font-family: "Barlow";
-  background-color: rgb(46, 129, 207);
+  background-color: white;
   /* color: hsl(200, 96%, 67%); */
   interpolate-size: allow-keywords;
 }
