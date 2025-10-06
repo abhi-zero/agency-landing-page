@@ -28,62 +28,62 @@ export default function AboutCard({
       >
         <div className="flex flex-col gap-2.5 md:text-left text-center">
           <motion.h2
-            initial={{
-              y: "100%",
-              opacity: 0.3,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
+            // initial={{
+            //   y: "100%",
+            //   opacity: 0.3,
+            // }}
+            // whileInView={{
+            //   y: 0,
+            //   opacity: 1,
+            // }}
+            // transition={{
+            //   duration: 0.8,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{
+            //   once: true,
+            //   amount: 0.2,
+            // }}
             className="font-Fraunces font-bold text-2xl md:text-3xl lg:text-5xl leading-[100%]"
           >
             {heading}
           </motion.h2>
           <motion.p
-            initial={{
-              opacity: 0.3,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
+            // initial={{
+            //   opacity: 0.3,
+            // }}
+            // whileInView={{
+            //   opacity: 1,
+            // }}
+            // transition={{
+            //   duration: 0.8,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{
+            //   once: true,
+            //   amount: 0.2,
+            // }}
             className="font-Barlow font-medium text-neutral-500 lg:text-xl"
           >
             {description}
           </motion.p>
           <motion.div
-            initial={{
-              y: "-100%",
-              opacity: 0.3,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
+            // initial={{
+            //   y: "-100%",
+            //   opacity: 0.3,
+            // }}
+            // whileInView={{
+            //   y: 0,
+            //   opacity: 1,
+            // }}
+            // transition={{
+            //   duration: 0.8,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{
+            //   once: true,
+            //   amount: 0.2,
+            // }}
           >
             <CustomAnchorLink text={linkText} bgColor={color} />
           </motion.div>
@@ -98,30 +98,30 @@ export default function AboutCard({
           <source media="(max-width: 768px)" srcSet={mobileImage} />
           <source media="(min-width: 769px)" srcSet={desktopImage} />
           <motion.img
-            initial={
-              varient === 1
-                ? {
-                    x: "100%",
-                    y: "100%",
-                    opacity: 0,
-                    rotateZ: 45,
-                  }
-                : { x: "-100%", y: "100%", opacity: 0, rotateZ: -45 }
-            }
-            whileInView={{
-              x: 0,
-              y: 0,
-              opacity: 1,
-              rotateZ: 0,
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeInOut",
-            }}
-            viewport={{
-              once: true,
-              amount: 0,
-            }}
+            // initial={
+            //   varient === 1
+            //     ? {
+            //         x: "100%",
+            //         y: "100%",
+            //         opacity: 0,
+            //         rotateZ: 45,
+            //       }
+            //     : { x: "-100%", y: "100%", opacity: 0, rotateZ: -45 }
+            // }
+            // whileInView={{
+            //   x: 0,
+            //   y: 0,
+            //   opacity: 1,
+            //   rotateZ: 0,
+            // }}
+            // transition={{
+            //   duration: 1,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{
+            //   once: true,
+            //   amount: 0,
+            // }}
             src={desktopImage}
             alt={alt}
             className="w-full h-full object-center object-cover"

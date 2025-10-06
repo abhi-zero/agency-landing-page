@@ -27,30 +27,30 @@ export default function ServiceCard({
           <source media="(max-width: 768px)" srcSet={mobileImage} />
           <source media="(min-width: 769px)" srcSet={desktopImage} />
           <motion.img
-            initial={
-              varient === 1
-                ? {
-                    x: "-60%",
-                    opacity: 0,
-                  }
-                : {
-                    x: "60%",
-                    opacity: 0,
-                  }
-            }
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              rotateZ: 0,
-            }}
-            transition={{
-              duration: 1,
-              ease: "linear",
-            }}
-            viewport={{
-              once: true,
-              amount: 0,
-            }}
+            // initial={
+            //   varient === 1
+            //     ? {
+            //         x: "-60%",
+            //         opacity: 0,
+            //       }
+            //     : {
+            //         x: "60%",
+            //         opacity: 0,
+            //       }
+            // }
+            // whileInView={{
+            //   x: 0,
+            //   opacity: 1,
+            //   rotateZ: 0,
+            // }}
+            // transition={{
+            //   duration: 1,
+            //   ease: "linear",
+            // }}
+            // viewport={{
+            //   once: true,
+            //   amount: 0,
+            // }}
             src={desktopImage}
             alt={alt}
             className="w-full h-full object-center object-cover group-hover:scale-125 transition-all duration-300 ease-in-out"
