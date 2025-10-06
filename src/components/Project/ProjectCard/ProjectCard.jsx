@@ -10,13 +10,25 @@ export default function ProjectCard({
 }) {
   return (
     <div>
-      <div className="group relative overflow-hidden">
+      <div className="lg:hidden block">
+        <a href={link}>
+          <picture>
+          <source media="(max-width: 768px)" srcSet={mobileImage} />
+          <source media="(min-width: 769px)" srcSet={desktopImage} />
+          <img
+            src={desktopImage}
+            className="w-full h-full object-center object-cover"
+          />
+        </picture>
+        </a>
+      </div>
+      <div className="group hidden lg:block relative overflow-hidden">
         <picture>
           <source media="(max-width: 768px)" srcSet={mobileImage} />
           <source media="(min-width: 769px)" srcSet={desktopImage} />
           <img
             src={desktopImage}
-            className="w-full h-full object-center object-cover group-hover:scale-125 transition-all duration-300 ease-in-out"
+            className="w-full h-full object-center object-cover"
           />
         </picture>
         <div className="top-[100%] group-hover:top-[0%] absolute flex justify-center items-center-safe bg-neutral-0/9 backdrop-blur-sm w-full h-full transition-all duration-300 ease-in-out">
