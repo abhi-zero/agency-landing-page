@@ -38,7 +38,7 @@ export default function TestimonialCard({
         </div>
         <div className="flex flex-col items-center-safe gap-6">
           <div>
-            <p className="h-[120px] overflow-hidden font-Barlow font-semibold text-neutral-600 text-xl text-center line-clamp-4">
+            <p className="h-[110px] overflow-hidden font-Barlow font-semibold text-neutral-600 text-xl text-center line-clamp-4">
               {testimonialText}
             </p>
           </div>
