@@ -8,7 +8,6 @@ export default function AnchorLinkAsButton({
 }) {
     const color = getColor(textColor)
     const bgColor = getColor(bg)
-    console.log(color, bgColor);
     
   return (
     <a href={link}

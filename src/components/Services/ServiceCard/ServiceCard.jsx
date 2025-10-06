@@ -14,7 +14,6 @@ export default function ServiceCard({
 }) {
   const color = getColor(bg);
   const textColor = getColor(text);
-  console.log(color);
 
   return (
     <a href="#" className="group">
