@@ -1,6 +1,6 @@
 
 import Navbar from './components/Navbar/Navbar'
-import { AboutSection, HeroSetion, ServiceSection, TestimonialSection } from './sections'
+import { AboutSection, HeroSetion, ProjectSection, ServiceSection, TestimonialSection } from './sections'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <AboutSection />
       <ServiceSection />
       <TestimonialSection />
+      <ProjectSection />
     </div>
   )
 }
