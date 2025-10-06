@@ -25,17 +25,17 @@ export default function Navbar() {
     <div className="right-0 left-0 z-999 fixed md:px-10 w-screen">
       <nav className="z-999 relative flex justify-between items-center-safe bg-cm-blue-300/50 backdrop-blur-sm m-auto mx-auto md:my-5 px-8 md:px-5 py-8 md:py-5 md:pl-8 md:rounded-full w-full max-w-[1340px]">
         <motion.div 
-        // initial={{y : -20, opacity: 0 }}
-        // animate={{y: 0, opacity: 1}}
+        initial={{y : -20, opacity: 0 }}
+        animate={{y: 0, opacity: 1}}
         >
           <img src={logo} alt="logo" />
         </motion.div>
         <div className="hidden md:block">
           <motion.ul
             className="flex items-center-safe gap-10"
-            // variants={navVariant}
-            // initial="hidden"
-            // animate="show"
+            variants={navVariant}
+            initial="hidden"
+            animate="show"
           >
             {navLinks.map((nav) => (
               <motion.li key={`${nav.name}-${nav.navLink}`} variants={itemVariant}>
@@ -49,7 +49,7 @@ export default function Navbar() {
             ))}
 
             <motion.li 
-            // variants={itemVariant}
+            variants={itemVariant}
             >
               <Button text="CONTACT" />
             </motion.li>
@@ -61,10 +61,10 @@ export default function Navbar() {
       </nav>
       <motion.div
         className="top-2/2 z-995 absolute w-full overflow-hidden"
-        // initial={{ opacity: 0, y: -300 }}
-        // animate={isOpen ? { y: 0, opacity: "100%" } : { y: -300, opacity: 0 }}
-        // style={{ originX: 1 }}
-        // transition={{ type: "spring", stiffness: 200 }}
+        initial={{ opacity: 0, y: -300 }}
+        animate={isOpen ? { y: 0, opacity: "100%" } : { y: -300, opacity: 0 }}
+        style={{ originX: 1 }}
+        transition={{ type: "spring", stiffness: 200 }}
       >
         <div className="md:hidden block relative px-11 py-9 w-full h-full nav-links">
           <div className="top-0 right-11 absolute triangle"></div>

@@ -10,23 +10,23 @@ export default function TestimonialCard({
   return (
     <div className="perspective-midrange">
       <motion.div
-        // initial={{
-        //   opacity: 0,
-        //   rotateX: 90,
-        // }}
-        // whileInView={{
-        //   rotateX: 0,
-        //   opacity: 1,
-        // }}
-        // transition={{
-        //   delay: 0.2,
-        //   duration: 1,
-        //   ease: "easeInOut",
-        // }}
-        // viewport={{
-        //   once: true,
-        //   amount: 0,
-        // }}
+        initial={{
+          opacity: 0,
+          rotateX: 90,
+        }}
+        whileInView={{
+          rotateX: 0,
+          opacity: 1,
+        }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeInOut",
+        }}
+        viewport={{
+          once: true,
+          amount: 0,
+        }}
         className="flex flex-col items-center-safe gap-2.5 hover:shadow-xl p-5 rounded-2xl transition-all duration-300 ease-in-out"
       >
         <div>
