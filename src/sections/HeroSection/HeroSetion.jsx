@@ -43,11 +43,12 @@ export default function HeroSetion() {
           alt=""
           className="object-center"
           animate={{
-            y: [0, -50, 0],
+            y: [0, -30, 0],
           }}
           transition={{
             delay: 1,
-            duration: 1,
+            duration: 1.5,
+            ease:"easeInOut",
             repeat: Infinity,
             repeatType: "loop",
           }}
