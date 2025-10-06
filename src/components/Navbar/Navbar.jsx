@@ -22,8 +22,8 @@ export default function Navbar() {
     show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 200 } },
   };
   return (
-    <div className="z-999 fixed md:px-10 w-screen">
-      <nav className="z-999 relative flex justify-between items-center-safe bg-cm-blue-300/50 backdrop-blur-sm mx-auto md:my-5 px-8 md:px-5 py-8 md:py-5 md:pl-8 md:rounded-full w-full max-w-[1340px]">
+    <div className="right-0 left-0 z-999 fixed md:px-10 w-screen">
+      <nav className="z-999 relative flex justify-between items-center-safe bg-cm-blue-300/50 backdrop-blur-sm m-auto mx-auto md:my-5 px-8 md:px-5 py-8 md:py-5 md:pl-8 md:rounded-full w-full max-w-[1340px]">
         <motion.div 
         initial={{y : -20, opacity: 0 }}
         animate={{y: 0, opacity: 1}}

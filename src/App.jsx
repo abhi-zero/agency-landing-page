@@ -4,7 +4,7 @@ import { AboutSection, Footer, HeroSetion, ProjectSection, ServiceSection, Testi
 
 function App() {
   return (
-    <div className='max-w-[1950px] overflow-x-hidden'>
+    <div className='m-auto max-width'>
       <Navbar />
       <HeroSetion />
       <AboutSection />

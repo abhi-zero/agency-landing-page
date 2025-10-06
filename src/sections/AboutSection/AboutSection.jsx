@@ -6,7 +6,7 @@ import desktopCard2Image from '../../assets/images/desktop/image-stand-out.jpg'
 
 export default function AboutSection() {
   return (
-    <div className='max-w-[1440px]'>
+    <div className='max-width' id='about'>
        <div>
          <AboutCard
             heading={"Transform your brand"}

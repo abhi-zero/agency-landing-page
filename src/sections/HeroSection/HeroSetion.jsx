@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import arrowDown from "../../assets/images/icon-arrow-down.svg";
 export default function HeroSetion() {
   return (
-    <div className="bg-[image:var(--hero-mobile)] md:bg-[image:var(--hero-desktop)] bg-center pt-[124px] w-[100vw] h-[100vh]">
+    <div className="bg-[image:var(--hero-mobile)] md:bg-[image:var(--hero-desktop)] bg-center pt-[124px] w-[100vw] h-[100vh] max-width">
       <div className="perspective-normal">
         <motion.h1
           className="mt-[130px] font-Fraunces font-extrabold text-neutral-0 text-7xl text-center"

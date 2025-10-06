@@ -17,7 +17,7 @@ export default function AboutCard({
   const color = getColor(bg)
 
   return (
-    <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 bg-neutral-0 w-screen">
+    <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 bg-neutral-0">
       <div
      
         className={`${

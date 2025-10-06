@@ -7,7 +7,7 @@ import desktopCard1Image from "../../assets/images/desktop/image-graphic-design.
 
 export default function ServiceSection() {
   return (
-    <div className="md:grid md:grid-cols-2 w-screen">
+    <div id="service" className="md:grid md:grid-cols-2 max-width">
       <ServiceCard
         mobileImage={mobileCard1Image}
         desktopImage={desktopCard1Image}
