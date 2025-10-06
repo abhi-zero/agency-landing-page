@@ -6,7 +6,9 @@ const colors = {
   greenLight: "cm-green-500",
   greenExtraLight: "cm-green-300",
   blueDark: "cm-blue-800",
-  blueExtraLight: "cm-blue-300"
+  blueExtraLight: "cm-blue-300",
+  black: "neutral-950",
+  white: "neutral-0"
 };
 
 export default function getColor(colorName) {
