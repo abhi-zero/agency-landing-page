@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo/logo.svg";
 import Button from "../ui/Button/Button";
 import { HiMenu } from "react-icons/hi";
 import { motion } from "motion/react";
+import navLinks from "../../utitly/navLinks";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar() {
   };
   return (
     <div className="z-999 fixed md:px-10 w-screen">
-      <nav className="z-999 relative flex justify-between items-center-safe bg-neutral-0/5 backdrop-blur-2xl mx-auto md:my-5 px-8 md:px-5 py-8 md:py-5 md:pl-8 md:rounded-full w-full max-w-[1340px]">
+      <nav className="z-999 relative flex justify-between items-center-safe bg-cm-blue-300/50 backdrop-blur-2xl mx-auto md:my-5 px-8 md:px-5 py-8 md:py-5 md:pl-8 md:rounded-full w-full max-w-[1340px]">
         <motion.div 
         initial={{y : -20, opacity: 0 }}
         animate={{y: 0, opacity: 1}}
@@ -36,13 +37,13 @@ export default function Navbar() {
             initial="hidden"
             animate="show"
           >
-            {["About", "Service", "Project"].map((text) => (
-              <motion.li key={text} variants={itemVariant}>
+            {navLinks.map((nav) => (
+              <motion.li key={`${nav.name}-${nav.navLink}`} variants={itemVariant}>
                 <a
-                  href=""
-                  className="font-Barlow font-bold text-[18px] text-neutral-0 hover:text-yellow-500 transition-all duration-500 ease-in-out"
+                  href={nav.navLink}
+                  className="font-Barlow font-bold text-[18px] text-neutral-0 hover:text-yellow-500 transition-all duration-300 ease-in-out"
                 >
-                  {text}
+                  {nav.name}
                 </a>
               </motion.li>
             ))}
@@ -67,30 +68,17 @@ export default function Navbar() {
           <div className="top-0 right-11 absolute triangle"></div>
           <div className="bg-neutral-0 p-10">
             <ul className="flex flex-col items-center-safe gap-5">
-              <li>
+              {navLinks.map((nav) => (
+              <li key={`${nav.name}-${nav.navLink}`} >
                 <a
-                  href=""
-                  className="font-Barlow font-bold text-[18px] text-neutral-500 hover:text-yellow-500 transition-all duration-500 ease-in-out"
+                  href={nav.navLink}
+                  className="font-Barlow font-bold text-[18px] text-neutral-0 hover:text-yellow-500 transition-all duration-300 ease-in-out"
                 >
-                  About
+                  {nav.name}
                 </a>
               </li>
-              <li>
-                <a
-                  href=""
-                  className="font-Barlow font-bold text-[18px] text-neutral-500 hover:text-yellow-500 transition-all duration-500 ease-in-out"
-                >
-                  Service
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  className="font-Barlow font-bold text-[18px] text-neutral-500 hover:text-yellow-500 transition-all duration-500 ease-in-out"
-                >
-                  Projects
-                </a>
-              </li>
+            ))}
+              
               <li>
                 <Button
                   text="CONTACT"
