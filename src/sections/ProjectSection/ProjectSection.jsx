@@ -5,7 +5,7 @@ export default function ProjectSection() {
   return (
     <div id='project'>
       <div>
-        <ul className='grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:md:grid-cols-[repeat(auto-fill,minmax(380px,1fr))] xl:md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]'>
+        <ul className='grid grid-cols-[repeat(auto-fill,minmax(170px,1fr))] md:grid-cols-4'>
           {projects.map((project) => (
           <li key={`${project.destopProjectImg}-${project.mobileProjectImg}`}>
             <ProjectCard 
