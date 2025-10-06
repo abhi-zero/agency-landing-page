@@ -92,11 +92,16 @@
   --hero-mobile: url("../images/mobile/image-header.jpg");
 }
 
+@utility max-width{
+  @apply max-w-[1950px] overflow-x-hidden;
+}
+
 html,
 body {
   font-family: "Barlow";
   background-color: white;
   /* color: hsl(200, 96%, 67%); */
+  scroll-behavior: smooth;
   interpolate-size: allow-keywords;
 }
 
