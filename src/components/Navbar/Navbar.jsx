@@ -72,7 +72,7 @@ export default function Navbar() {
               <li key={`${nav.name}-${nav.navLink}`} >
                 <a
                   href={nav.navLink}
-                  className="font-Barlow font-bold text-[18px] text-neutral-0 hover:text-yellow-500 transition-all duration-300 ease-in-out"
+                  className="font-Barlow font-bold text-[18px] text-neutral-950 hover:text-yellow-500 transition-all duration-300 ease-in-out"
                 >
                   {nav.name}
                 </a>
