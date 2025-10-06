@@ -55,6 +55,14 @@
   --cm-green-300: hsl(170, 46%, 73%);
   --cm-blue-800: hsl(198, 62%, 26%); /*(photography text)*/
   --cm-blue-300: hsl(200, 96%, 67%);
+
+    /* Neutral */
+  --neutral-950: hsl(212, 27%, 19%);
+  --neutral-600: hsl(213, 9%, 39%);
+  --neutral-550: hsl(232, 10%, 55%);
+  --neutral-400: hsl(210, 4%, 67%);
+  --neutral-0: hsl(0, 100%, 100%);
+
 }
 
 @theme {
