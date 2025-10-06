@@ -28,7 +28,7 @@ export default function Footer() {
             <ul className="flex justify-center items-center-safe gap-5">
               {navLinks.map((nav) => (
                 <li key={`${nav.name}-${nav.navLink}`} 
-                className="font-Barlow font-semibold text-cm-green-800 hover:text-cm-red-200 transition-all duration-300 ease-in-out"
+                className="font-Barlow font-semibold text-cm-green-500 hover:text-cm-green-800 transition-all duration-300 ease-in-out"
                 >
                   <a href={nav.navLink}>{nav.name}</a>
                 </li>
@@ -38,7 +38,7 @@ export default function Footer() {
               <ul className="flex justify-center items-center-safe gap-3">
                 {[<IoLogoFacebook />, <LuInstagram />, <FaTwitter />, <FaPinterest />].map((icon, i) => (
                   <li key={i}
-                  className="text-cm-green-800 hover:text-cm-red-400 text-2xl transition-all duration-300 ease-in-out"
+                  className="text-cm-green-500 hover:text-cm-green-800 text-2xl transition-all duration-300 ease-in-out"
                   >
                     <a href="">
                         {icon}
